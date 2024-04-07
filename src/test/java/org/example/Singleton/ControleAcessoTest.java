@@ -1,6 +1,6 @@
 package org.example.Singleton;
 
-import org.example.Singleton.ControleAcesso;
+import org.example.PadroesCriacao.Singleton.ControleAcesso;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

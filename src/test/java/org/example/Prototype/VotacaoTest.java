@@ -1,5 +1,7 @@
 package org.example.Prototype;
 
+import org.example.PadroesCriacao.Prototype.Atualizacao;
+import org.example.PadroesCriacao.Prototype.Votacao;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

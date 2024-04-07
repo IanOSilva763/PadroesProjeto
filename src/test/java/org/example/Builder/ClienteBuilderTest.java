@@ -1,6 +1,8 @@
 package org.example.Builder;
 
 
+import org.example.PadroesCriacao.Builder.Cliente;
+import org.example.PadroesCriacao.Builder.ClienteBuilder;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

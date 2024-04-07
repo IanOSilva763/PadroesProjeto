@@ -1,5 +1,9 @@
 package org.example.AbstractFactory;
 
+import org.example.PadroesCriacao.AbstractFactory.Eletronicos;
+import org.example.PadroesCriacao.AbstractFactory.FabricaAbstrata;
+import org.example.PadroesCriacao.AbstractFactory.FabricaApple;
+import org.example.PadroesCriacao.AbstractFactory.FabricaAsus;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
