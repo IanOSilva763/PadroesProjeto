@@ -7,7 +7,7 @@ public class ImpressaoFactory {
         Class classe = null;
         Object objeto = null;
         try {
-            classe = Class.forName("org.example.FactoryMethod.Impressao" + impressao);
+            classe = Class.forName("org.example.PadroesCriacao.FactoryMethod.Impressao" + impressao);
             objeto = classe.newInstance();
         } catch (Exception ex) {
             throw new IllegalArgumentException("Opção inexistente");
