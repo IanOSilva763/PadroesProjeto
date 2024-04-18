@@ -12,7 +12,7 @@ public class ClienteFacade {
         this.FactorySeguranca = new FactorySeguranca();
     }
 
-    public boolean verificarPendenciasDivida(Cliente cliente) {
+    public static boolean verificarPendenciasDivida(Cliente cliente) {
         if (Conta.getInstancia().verificarClientesEndividados(cliente)) {
             return false;
         }
