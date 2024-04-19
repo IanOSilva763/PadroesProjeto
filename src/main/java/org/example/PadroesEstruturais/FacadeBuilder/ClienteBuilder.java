@@ -13,7 +13,7 @@ public class ClienteBuilder {
         if (cliente.getNumCartao() == 0 ) {
             throw new IllegalArgumentException("Número do cartão inválido");
         }
-        if (cliente.getCpf() == 0 ) {
+        if (cliente.getCpf().equals("")) {
             throw new IllegalArgumentException("Cpf inválido");
         }
         if (cliente.getRg().equals("")) {
@@ -31,7 +31,7 @@ public class ClienteBuilder {
         return this;
     }
 
-    public ClienteBuilder setCpf(int cpf) {
+    public ClienteBuilder setCpf(String cpf) {
         cliente.setCpf(cpf);
         return this;
     }
