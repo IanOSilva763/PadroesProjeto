@@ -1,16 +1,25 @@
 package org.example.PadroesEstruturais.FacadeBuilder;
 
 public class ClienteFacade {
+    private static final ClienteFacade instance = new ClienteFacade();
+
+    private FactorySetor factoryFinanceiro;
+    private FactorySetor factoryConta;
+    private FactorySetor factorySeguranca;
+
+    private ClienteFacade() {
+        this.factoryFinanceiro = new FactoryFinanceiro();
+        this.factoryConta = new FactoryConta();
+        this.factorySeguranca = new FactorySeguranca();
+    }
+
+    public static ClienteFacade getInstance() {
+        return instance;
+    }
 
     private FactorySetor FactoryFinanceiro;
     private FactorySetor FactoryConta;
     private FactorySetor FactorySeguranca;
-
-    public ClienteFacade() {
-        this.FactoryFinanceiro = new FactoryFinanceiro();
-        this.FactoryConta = new FactoryConta();
-        this.FactorySeguranca = new FactorySeguranca();
-    }
 
     public static boolean verificarPendenciasDivida(Cliente cliente) {
         if (Conta.getInstancia().verificarClientesEndividados(cliente)) {
@@ -37,4 +46,3 @@ public class ClienteFacade {
         return FactorySeguranca.criarSetor();
     }
 }
-
