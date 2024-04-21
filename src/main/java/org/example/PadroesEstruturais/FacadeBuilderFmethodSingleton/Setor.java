@@ -1,4 +1,4 @@
-package org.example.PadroesEstruturais.FacadeBuilder;
+package org.example.PadroesEstruturais.FacadeBuilderFmethodSingleton;
 import java.util.ArrayList;
 import java.util.List;
 public abstract class Setor {

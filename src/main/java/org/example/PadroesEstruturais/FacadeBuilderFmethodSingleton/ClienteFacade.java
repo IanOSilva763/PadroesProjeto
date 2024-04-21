@@ -1,4 +1,4 @@
-package org.example.PadroesEstruturais.FacadeBuilder;
+package org.example.PadroesEstruturais.FacadeBuilderFmethodSingleton;
 
 public class ClienteFacade {
     private static final ClienteFacade instance = new ClienteFacade();

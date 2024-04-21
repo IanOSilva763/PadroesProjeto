@@ -1,4 +1,4 @@
-package org.example.PadroesEstruturais.FacadeBuilder;
+package org.example.PadroesEstruturais.FacadeBuilderFmethodSingleton;
 
 public class Financeiro extends Setor{
     public static Financeiro financeiro = new Financeiro();

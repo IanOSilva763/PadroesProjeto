@@ -1,4 +1,4 @@
-package org.example.PadroesEstruturais.FacadeBuilder;
+package org.example.PadroesEstruturais.FacadeBuilderFmethodSingleton;
 
 public class FactorySeguranca implements FactorySetor {
     @Override

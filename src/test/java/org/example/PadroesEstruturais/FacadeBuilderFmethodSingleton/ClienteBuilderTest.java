@@ -1,7 +1,5 @@
-package org.example.PadroesEstruturais.FacadeBuilder;
+package org.example.PadroesEstruturais.FacadeBuilderFmethodSingleton;
 
-import org.example.PadroesEstruturais.FacadeBuilder.Cliente;
-import org.example.PadroesEstruturais.FacadeBuilder.ClienteBuilder;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

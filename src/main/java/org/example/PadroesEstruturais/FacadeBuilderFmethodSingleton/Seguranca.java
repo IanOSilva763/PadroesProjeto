@@ -1,4 +1,4 @@
-package org.example.PadroesEstruturais.FacadeBuilder;
+package org.example.PadroesEstruturais.FacadeBuilderFmethodSingleton;
 
 public class Seguranca extends Setor{
     public static Seguranca seguranca = new Seguranca();
