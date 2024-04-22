@@ -17,10 +17,6 @@ public class ClienteFacade {
         return instance;
     }
 
-    private FactorySetor FactoryFinanceiro;
-    private FactorySetor FactoryConta;
-    private FactorySetor FactorySeguranca;
-
     public static boolean verificarPendenciasDivida(Cliente cliente) {
         if (Conta.getInstancia().verificarClientesEndividados(cliente)) {
             return false;
@@ -35,14 +31,14 @@ public class ClienteFacade {
     }
 
     public Setor criarFinanceiro() {
-        return FactoryFinanceiro.criarSetor();
+        return factoryFinanceiro.criarSetor();
     }
 
     public Setor criarConta() {
-        return FactoryConta.criarSetor();
+        return factoryConta.criarSetor();
     }
 
     public Setor criarSeguranca() {
-        return FactorySeguranca.criarSetor();
+        return factorySeguranca.criarSetor();
     }
 }
