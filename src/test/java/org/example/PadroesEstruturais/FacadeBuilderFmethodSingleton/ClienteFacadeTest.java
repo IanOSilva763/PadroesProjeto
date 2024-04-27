@@ -21,7 +21,6 @@ class ClienteFacadeTest {
                 .setNumCartao(5678)
                 .build();
 
-        // Adicionando os clientes ao setor Conta para simular dívidas
         Conta.getInstancia().addClienteEndividado(cliente1);
         Conta.getInstancia().addClienteEndividado(cliente2);
 
