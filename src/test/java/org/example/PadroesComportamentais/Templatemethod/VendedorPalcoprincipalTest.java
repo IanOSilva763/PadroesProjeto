@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class VendedorPalcoprincipalTest {
     @Test
-    void deveRetonarAprovado() {
+    void deveRetonarBateuMeta() {
         VendedorPalcoprincipal vendedor = new VendedorPalcoprincipal();
         vendedor.setVendalote1(12000);
         vendedor.setVendalote2(9000);
@@ -15,7 +15,7 @@ class VendedorPalcoprincipalTest {
     }
 
     @Test
-    void deveRetonarReprovado() {
+    void deveRetonarNaoBateuMeta() {
         VendedorPalcoprincipal vendedor = new VendedorPalcoprincipal();
         vendedor.setVendalote1(140);
         vendedor.setVendalote2(210);
